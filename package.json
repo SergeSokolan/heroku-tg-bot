@@ -1,0 +1,15 @@
+{
+  "name": "fortyseven",
+  "version": "1.0.0",
+  "description": "telegram bot with local jokes",
+  "main": "index.js",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.50.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "ss",
+  "license": "ISC"
+}
