@@ -14,6 +14,15 @@ const answersOnFour = [
 const answerOnFour = () =>
   answersOnFour[Math.floor(Math.random() * answersOnFour.length)];
 
+bot.onText(/\/start/, function (msg) {
+  bot.sendMessage(msg.chat.id, 'Дарованьки, пидоры!');
+});
+
+bot.onText(/.*(?:4|.*7)/, (msg) => {
+  Boolean(match[0].split('').filter((word) => word === '7') != '7') &&
+    bot.sendMessage(msg.chat.id, '7');
+});
+
 bot.onText(/.*(?:4|.*7)/, (msg, match) => {
   Boolean(match[0].split('').filter((word) => word === '7') != '7') &&
     bot.sendMessage(msg.chat.id, '7');
